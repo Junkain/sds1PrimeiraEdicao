@@ -25,7 +25,7 @@ public class Record implements Serializable{
 	
 
 	@ManyToOne
-	@JoinColumn(name = "genre_game")
+	@JoinColumn(name = "game_id")
 	private Game game;
 
 	public Record() {
