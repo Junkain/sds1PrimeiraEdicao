@@ -21,7 +21,7 @@ const initialPieData = {
     series: []
 }
 
-const  BASE_URL ='http://localhost:8080'
+const  BASE_URL ='https://sds1-mori.herokuapp.com';
 
 const Charts = () =>{ 
 
@@ -50,7 +50,7 @@ const Charts = () =>{
 
     return (
         <div className="page-container">
-            <Filters link = '/records' linkText = "VER TABELA"/>
+            <Filters link = "/records" linkText = "VER TABELA"/>
             <div className="chart-container">
                 <div className="top-related">
                     <h1 className="top-related-title">
@@ -66,9 +66,9 @@ const Charts = () =>{
                         />
                     </div>
                 </div>
-                <div className='charts'>
-                     <div className='platform-chart'>
-                        <h2 className='chart-title'> Plataformas</h2>
+                <div className="charts">
+                     <div className="platform-chart">
+                        <h2 className="chart-title"> Plataformas</h2>
                         <Chart
                             options= {{ ...pieOptions, labels: platformData?.labels }}
                             type="donut"
@@ -76,8 +76,8 @@ const Charts = () =>{
                             width="350"
                         />
                      </div>
-                     <div className='gender-chart'>
-                        <h2 className='chart-title'> Generos</h2>
+                     <div className="gender-chart">
+                        <h2 className="chart-title"> Generos</h2>
                         <Chart 
                             options={{...pieOptions, labels: genderData?.labels }}
                             type="donut"
