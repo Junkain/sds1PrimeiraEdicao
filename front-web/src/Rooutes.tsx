@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Records from './pages/Records';
 import Charts from './pages/Charts'
 
-const Routes = () => (
+const Rooutes = () => (
     <BrowserRouter>
         <Header />
         <Switch>
@@ -22,4 +22,4 @@ const Routes = () => (
     </BrowserRouter> 
 );
 
-export default Routes;
+export default Rooutes;
