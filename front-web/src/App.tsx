@@ -7,7 +7,7 @@ import Rooutes from './Rooutes';
 
 function App() {
   return (
-    <Rooutes></Rooutes>
+    <Rooutes/>
   );
 }
 
